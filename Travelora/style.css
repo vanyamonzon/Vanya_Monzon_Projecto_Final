@@ -1,0 +1,2182 @@
+
+/* =============================================
+   TRAVELORA - ESTILO GENERAL
+   Identidad visual tropical, cálida y caribeña.
+============================================= */
+
+/* Reiniciamos los márgenes y espacios predeterminados. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Desplazamiento suave entre secciones. */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo general de todas las páginas. */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f5;
+    color: #674b4c;
+}
+
+/* =============================================
+   PALETA VISUAL
+============================================= */
+
+/*
+   Rosa empolvado: #db97b9
+   Coral principal: #eb777d
+   Rosa claro: #f5b6bd
+   Crema: #fff8f5
+   Arena: #f4e5d9
+   Texto oscuro: #674b4c
+   Bordó: #9f396c
+*/
+
+/* =============================================
+   BARRA DE NAVEGACIÓN
+============================================= */
+
+/* Organizamos el logo y los enlaces del menú. */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background-color: #db97b9;
+}
+
+/* Nombre principal de la aplicación. */
+.logo {
+    font-size: 30px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+/* Color de la segunda parte del logo. */
+.logo span {
+    color: #ffffff;
+}
+
+/* Organizamos los enlaces horizontalmente. */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Apariencia de los enlaces. */
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Efecto al pasar el mouse. */
+.menu a:hover {
+    color: #ffe3e2;
+}
+
+/* Botón destacado del menú. */
+.menu .boton-menu {
+    background-color: #eb777d;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 25px;
+}
+
+/* Efecto del botón del menú. */
+.menu .boton-menu:hover {
+    background-color: #d95f6a;
+    color: white;
+}
+
+/* =============================================
+   PORTADA PRINCIPAL
+============================================= */
+
+/* Banner principal con fotografía tropical. */
+.portada {
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+        ),
+        url("https://images.unsplash.com/photo-1567991722999-74f27f53f33a?w=1600")
+        center/cover no-repeat;
+
+    color: white;
+}
+
+/* Limitamos el ancho del texto del banner. */
+.contenido-portada {
+    max-width: 600px;
+}
+
+/* Texto pequeño que aparece sobre el título. */
+.subtitulo {
+    color: #ffd0cb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+/* Título principal del banner. */
+.contenido-portada h2 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Descripción del banner. */
+.contenido-portada p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+    color: white;
+}
+
+/* =============================================
+   BOTONES PRINCIPALES
+============================================= */
+
+/* Botón rosado utilizado en distintas secciones. */
+.boton-principal {
+    display: inline-block;
+    background-color: #eb777d;
+    color: white;
+    padding: 15px 27px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Efecto al pasar el mouse. */
+.boton-principal:hover {
+    background-color: #d95f6a;
+    transform: translateY(-3px);
+}
+
+/* =============================================
+   SECCIÓN DE DESTINOS DEL INICIO
+============================================= */
+
+/* Fondo de la sección de destinos. */
+.destinos {
+    padding: 80px 8%;
+    text-align: center;
+    background-color: #f8dce2;
+}
+
+/* Título de la sección. */
+.destinos h2 {
+    font-size: 36px;
+    color: #9f396c;
+    margin-bottom: 40px;
+}
+
+/* Subtítulo de la sección. */
+.destinos .subtitulo {
+    color: #b34d70;
+}
+
+/* Organizamos las tarjetas. */
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+/* Diseño individual de cada tarjeta. */
+.tarjeta {
+    width: 300px;
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(159, 57, 108, 0.10);
+    text-align: left;
+    transition: 0.3s;
+}
+
+/* Efecto al pasar el mouse. */
+.tarjeta:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(159, 57, 108, 0.18);
+}
+
+/* Imagen de cada destino. */
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Título de cada tarjeta. */
+.tarjeta h3 {
+    padding: 18px 18px 7px;
+    color: #b34d70;
+    font-size: 21px;
+}
+
+/* Descripción de cada tarjeta. */
+.tarjeta p {
+    padding: 5px 18px 22px;
+    color: #674b4c;
+    line-height: 1.5;
+}
+
+/* =============================================
+   PÁGINA DE DESTINOS
+============================================= */
+
+/* Encabezado de la página de destinos. */
+.encabezado-destinos {
+    text-align: center;
+    padding: 75px 20px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+        ),
+        url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=1600")
+        center/cover no-repeat;
+}
+
+/* Título del encabezado. */
+.encabezado-destinos h2 {
+    font-size: 42px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Descripción del encabezado. */
+.encabezado-destinos p {
+    color: white;
+    font-size: 17px;
+}
+
+/* Subtítulo del encabezado. */
+.encabezado-destinos .subtitulo {
+    color: #ffd0cb;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+/* Cuadrícula de destinos. */
+.lista-destinos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 65px 8%;
+    background-color: #fff8f5;
+}
+
+/* Tarjeta individual de destino. */
+.destino {
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(159, 57, 108, 0.10);
+    transition: 0.3s;
+}
+
+/* Efecto de elevación. */
+.destino:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(159, 57, 108, 0.18);
+}
+
+/* Fotografía del destino. */
+.destino img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+/* Contenido de la tarjeta. */
+.info-destino {
+    padding: 25px;
+}
+
+/* Categoría del destino. */
+.info-destino span {
+    color: #d46c83;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Nombre del destino. */
+.info-destino h3 {
+    color: #9f396c;
+    font-size: 25px;
+    margin: 12px 0;
+}
+
+/* Descripción del destino. */
+.info-destino p {
+    color: #765d5d;
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+/* Botón de cada destino. */
+.info-destino .boton-principal {
+    font-size: 14px;
+    padding: 12px 20px;
+}
+
+/* =============================================
+   FORMULARIOS: LOGIN Y REGISTRO
+============================================= */
+
+/* Fondo general de autenticación. */
+.auth-page {
+    min-height: 100vh;
+    background-color: #fff8f5;
+}
+
+/* Fondo fotográfico de los formularios. */
+.auth-container {
+    min-height: 750px;
+    padding: 70px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.30),
+            rgba(0, 0, 0, 0.30)
+        ),
+        url("https://images.unsplash.com/photo-1567991722999-74f27f53f33a?w=1600")
+        center/cover no-repeat;
+}
+
+/* Tarjeta clara del formulario. */
+.auth-card {
+    width: 100%;
+    max-width: 490px;
+    padding: 45px;
+
+    background-color: #fffaf7;
+    border-radius: 22px;
+
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* Encabezado del formulario. */
+.auth-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Texto pequeño superior. */
+.auth-tag {
+    color: #d46c83;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* Título del formulario. */
+.auth-heading h2 {
+    color: #9f396c;
+    font-size: 34px;
+    margin: 14px 0 10px;
+}
+
+/* Descripción del formulario. */
+.auth-heading p {
+    color: #765d5d;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Organización vertical de los campos. */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+/* Contenedor individual de cada campo. */
+.auth-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Etiquetas de los campos. */
+.auth-field label {
+    color: #9f396c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Cajas de texto. */
+.auth-field input {
+    width: 100%;
+    padding: 14px 15px;
+
+    border: 1px solid #ecd5d9;
+    border-radius: 10px;
+
+    background-color: #fff5f3;
+    color: #674b4c;
+    font-size: 14px;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Efecto al seleccionar un campo. */
+.auth-field input:focus {
+    border-color: #df899b;
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(223, 137, 155, 0.15);
+}
+
+/* Botón para enviar el formulario. */
+.auth-button {
+    margin-top: 10px;
+    padding: 15px;
+
+    border: none;
+    border-radius: 30px;
+
+    background-color: #eb777d;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efecto del botón. */
+.auth-button:hover {
+    background-color: #d95f6a;
+    transform: translateY(-2px);
+}
+
+/* Mensajes de respuesta del formulario. */
+.auth-message {
+    padding: 13px;
+    margin-bottom: 22px;
+
+    border-radius: 9px;
+    background-color: #f8e4e5;
+    color: #9f396c;
+
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Texto inferior de los formularios. */
+.auth-footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #765d5d;
+    font-size: 14px;
+}
+
+/* Enlaces inferiores. */
+.auth-footer a {
+    color: #d46c83;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Enlace para volver al inicio. */
+.auth-back {
+    display: block;
+    text-align: center;
+    margin-top: 22px;
+    color: #9f396c;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Efecto del enlace de regreso. */
+.auth-back:hover {
+    color: #eb777d;
+}
+
+/* =============================================
+   ESTILOS ANTIGUOS DEL LOGIN
+   Se mantienen para páginas que todavía
+   utilicen las clases login-container y login-card.
+============================================= */
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff8f5;
+}
+
+.login-card {
+    background-color: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(159, 57, 108, 0.12);
+    text-align: center;
+}
+
+.login-card h1 {
+    color: #9f396c;
+    margin-bottom: 10px;
+}
+
+.login-card p {
+    color: #765d5d;
+    margin-top: 10px;
+}
+
+.login-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.login-card label {
+    text-align: left;
+    color: #9f396c;
+    font-weight: bold;
+}
+
+.login-card input {
+    padding: 12px;
+    border: 1px solid #ecd5d9;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.login-card button {
+    background-color: #eb777d;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.login-card button:hover {
+    background-color: #d95f6a;
+}
+
+/* =============================================
+   PANELES Y TABLAS
+   Estilos generales para las secciones
+   de usuarios y administración.
+============================================= */
+
+/* Contenedor general de los paneles. */
+.panel-container,
+.admin-container {
+    min-height: 650px;
+    padding: 55px 8%;
+    background-color: #fff8f5;
+}
+
+/* Tarjetas de información de los paneles. */
+.panel-card,
+.admin-card {
+    background-color: white;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(159, 57, 108, 0.10);
+    margin-bottom: 25px;
+}
+
+/* Títulos de los paneles. */
+.panel-container h1,
+.panel-container h2,
+.admin-container h1,
+.admin-container h2 {
+    color: #9f396c;
+    margin-bottom: 20px;
+}
+
+/* Tablas de usuarios. */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Celdas y encabezados. */
+th,
+td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #f0dfe1;
+}
+
+/* Encabezado de la tabla. */
+th {
+    background-color: #db97b9;
+    color: white;
+}
+
+/* Filas de la tabla. */
+td {
+    color: #674b4c;
+}
+
+/* Efecto suave en las filas. */
+tr:hover td {
+    background-color: #fff3f2;
+}
+
+/* Botones de acciones administrativas. */
+button,
+.boton-accion {
+    transition: 0.3s;
+}
+
+/* =============================================
+   PIE DE PÁGINA
+============================================= */
+
+/* Fondo y texto del pie de página. */
+footer {
+    background-color: #9f396c;
+    color: #fff8f5;
+    text-align: center;
+    padding: 28px;
+    font-size: 14px;
+}
+
+/* =============================================
+   ADAPTACIÓN A TABLETS
+============================================= */
+
+@media (max-width: 900px) {
+
+    /* Dos columnas de destinos en pantallas medianas. */
+    .lista-destinos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Reducimos el espacio lateral de los paneles. */
+    .panel-container,
+    .admin-container {
+        padding: 40px 5%;
+    }
+
+}
+
+/* =============================================
+   ADAPTACIÓN A CELULARES
+============================================= */
+
+@media (max-width: 768px) {
+
+    /* Menú vertical en celulares. */
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Permitimos que los enlaces ocupen varias líneas. */
+    .menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* Ajustamos el banner principal. */
+    .portada {
+        min-height: 450px;
+        padding: 50px 8%;
+    }
+
+    /* Reducimos el tamaño del título. */
+    .contenido-portada h2 {
+        font-size: 36px;
+    }
+
+    /* Reducimos el tamaño de la descripción. */
+    .contenido-portada p {
+        font-size: 15px;
+    }
+
+    /* Ajustamos la sección de destinos. */
+    .destinos {
+        padding: 55px 5%;
+    }
+
+    .destinos h2 {
+        font-size: 29px;
+    }
+
+    /* Tarjetas adaptadas al ancho de pantalla. */
+    .tarjeta {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
+
+/* =============================================
+   ADAPTACIÓN DE FORMULARIOS Y DESTINOS
+============================================= */
+
+@media (max-width: 600px) {
+
+    /* Una sola columna para las tarjetas. */
+    .lista-destinos {
+        grid-template-columns: 1fr;
+        padding: 40px 7%;
+    }
+
+    /* Ajustamos el título de destinos. */
+    .encabezado-destinos h2 {
+        font-size: 32px;
+    }
+
+    /* Reducimos el espacio del formulario. */
+    .auth-container {
+        padding: 40px 15px;
+    }
+
+    .auth-card {
+        padding: 30px 22px;
+    }
+
+    .auth-heading h2 {
+        font-size: 29px;
+    }
+
+    /* Permitimos desplazamiento horizontal en tablas anchas. */
+    .admin-container {
+        overflow-x: auto;
+    }
+
+}
+
+
+
+/* =========================================
+   PANEL PERSONAL DEL USUARIO
+   ========================================= */
+
+/* Fondo general del panel */
+.panel-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:
+        linear-gradient(rgba(45, 27, 35, 0.30), rgba(45, 27, 35, 0.30)),
+        url("https://images.unsplash.com/photo-1567991722999-74f27f53f33a?w=1600") center/cover fixed;
+}
+
+/* Contenedor que centra la tarjeta */
+.panel-container {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Tarjeta principal */
+.panel-card {
+    width: 100%;
+    padding: 45px;
+    background: rgba(255, 248, 245, 0.96);
+    border-radius: 22px;
+    box-shadow: 0 15px 45px rgba(40, 20, 25, 0.22);
+    text-align: center;
+}
+
+/* Encabezado del panel */
+.panel-heading {
+    margin-bottom: 35px;
+}
+
+.panel-tag {
+    color: #b85d83;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.panel-heading h1 {
+    color: #674b4c;
+    font-size: 32px;
+    margin: 18px 0 10px;
+}
+
+.panel-heading p {
+    color: #967777;
+    font-size: 16px;
+}
+
+/* Información de la cuenta */
+.panel-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.panel-detail {
+    padding: 20px;
+    background: #fff0ed;
+    border: 1px solid #f3d5d4;
+    border-radius: 14px;
+}
+
+.panel-detail span {
+    display: block;
+    color: #a17d7e;
+    font-size: 13px;
+    margin-bottom: 9px;
+}
+
+.panel-detail strong {
+    color: #674b4c;
+    font-size: 17px;
+}
+
+/* Botones y enlaces del panel */
+.panel-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.panel-button {
+    display: block;
+    width: 100%;
+    max-width: 330px;
+    padding: 14px 20px;
+    background: #eb777d;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.panel-button:hover {
+    background: #d85f70;
+    transform: translateY(-2px);
+}
+
+.panel-button-secondary {
+    background: #b85d83;
+}
+
+.panel-button-secondary:hover {
+    background: #98466a;
+}
+
+.panel-logout {
+    margin-top: 8px;
+    color: #9f396c;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.panel-logout:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+.panel-page .footer {
+    margin-top: auto;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+
+    .panel-card {
+        padding: 30px 20px;
+    }
+
+    .panel-heading h1 {
+        font-size: 25px;
+    }
+
+    .panel-info {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+/* =========================================
+   PANEL DE ADMINISTRACIÓN
+   ========================================= */
+
+/* Fondo tropical de la página */
+.admin-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:
+        linear-gradient(rgba(45, 27, 35, 0.35), rgba(45, 27, 35, 0.35)),
+        url("https://images.unsplash.com/photo-1567991722999-74f27f53f33a?w=1600") center/cover fixed;
+}
+
+/* Contenedor principal */
+.admin-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+    padding: 45px 25px;
+}
+
+/* Tarjeta principal */
+.admin-card {
+    width: 100%;
+    padding: 35px;
+    background: rgba(255, 248, 245, 0.97);
+    border-radius: 22px;
+    box-shadow: 0 15px 45px rgba(40, 20, 25, 0.22);
+}
+
+/* Encabezado */
+.admin-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.admin-tag {
+    color: #b85d83;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.admin-heading h1 {
+    color: #674b4c;
+    font-size: 32px;
+    margin: 14px 0 10px;
+}
+
+.admin-heading p {
+    color: #967777;
+    font-size: 15px;
+}
+
+/* Acceso a usuarios archivados */
+.admin-top-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 22px;
+}
+
+.admin-archive-link {
+    display: inline-block;
+    padding: 11px 18px;
+    background: #b85d83;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.admin-archive-link:hover {
+    background: #98466a;
+}
+
+/* Buscador */
+.admin-search {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background: #fff0ed;
+    border: 1px solid #f3d5d4;
+    border-radius: 15px;
+}
+
+.admin-search-field {
+    flex: 1;
+}
+
+.admin-search-field label {
+    display: block;
+    color: #674b4c;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.admin-search-field input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #e7c9c7;
+    border-radius: 9px;
+    background: white;
+    color: #674b4c;
+    font-size: 14px;
+    outline: none;
+}
+
+.admin-search-field input:focus {
+    border-color: #eb777d;
+    box-shadow: 0 0 0 3px rgba(235, 119, 125, 0.15);
+}
+
+/* Botones del buscador */
+.admin-search-button,
+.admin-clear-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-search-button {
+    background: #eb777d;
+    color: white;
+}
+
+.admin-search-button:hover {
+    background: #d85f70;
+}
+
+.admin-clear-button {
+    background: #f5dce0;
+    color: #9f396c;
+}
+
+.admin-clear-button:hover {
+    background: #edc4ce;
+}
+
+/* Contenedor que permite desplazar la tabla en celulares */
+.admin-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 12px;
+}
+
+/* Tabla de usuarios */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    color: #674b4c;
+    font-size: 13px;
+}
+
+.admin-table th {
+    padding: 16px 12px;
+    background: #b85d83;
+    color: white;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.admin-table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #f1dddd;
+}
+
+.admin-table tbody tr:nth-child(even) {
+    background: #fff8f5;
+}
+
+.admin-table tbody tr:hover {
+    background: #fff0ed;
+}
+
+/* Etiqueta del rol */
+.admin-role {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #f8e2e9;
+    color: #9f396c;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Acciones de cada usuario */
+.admin-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.admin-actions form {
+    margin: 0;
+}
+
+.admin-edit-button,
+.admin-delete-button {
+    display: inline-block;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin-edit-button {
+    background: #f5dce0;
+    color: #9f396c;
+}
+
+.admin-edit-button:hover {
+    background: #edc4ce;
+}
+
+.admin-delete-button {
+    background: #eb777d;
+    color: white;
+}
+
+.admin-delete-button:hover {
+    background: #d85f70;
+}
+
+/* Mensaje cuando no hay resultados */
+.admin-no-results {
+    padding: 30px !important;
+    text-align: center;
+    color: #967777;
+}
+
+/* Cantidad de usuarios encontrados */
+.admin-results {
+    margin-top: 18px;
+    color: #967777;
+    font-size: 13px;
+}
+
+/* Enlace para volver al panel */
+.admin-bottom-actions {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.admin-back-link {
+    color: #9f396c;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.admin-back-link:hover {
+    text-decoration: underline;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 700px) {
+
+    .admin-container {
+        padding: 25px 12px;
+    }
+
+    .admin-card {
+        padding: 22px 15px;
+    }
+
+    .admin-heading h1 {
+        font-size: 25px;
+    }
+
+    .admin-search {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .admin-search-button,
+    .admin-clear-button {
+        text-align: center;
+    }
+
+    .admin-top-actions {
+        justify-content: center;
+    }
+
+}
+
+
+
+/* =========================================
+   PÁGINA PARA EDITAR USUARIOS
+   ========================================= */
+
+/* Fondo tropical de la página */
+.editar-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:
+        linear-gradient(rgba(45, 27, 35, 0.35), rgba(45, 27, 35, 0.35)),
+        url("https://images.unsplash.com/photo-1567991722999-74f27f53f33a?w=1600") center/cover fixed;
+}
+
+/* Contenedor que centra el formulario */
+.editar-container {
+    width: 100%;
+    max-width: 650px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* Tarjeta principal */
+.editar-card {
+    width: 100%;
+    padding: 40px;
+    background: rgba(255, 248, 245, 0.97);
+    border-radius: 22px;
+    box-shadow: 0 15px 45px rgba(40, 20, 25, 0.22);
+}
+
+/* Encabezado */
+.editar-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.editar-tag {
+    color: #b85d83;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.editar-heading h1 {
+    color: #674b4c;
+    font-size: 30px;
+    margin: 15px 0 10px;
+}
+
+.editar-heading p {
+    color: #967777;
+    font-size: 14px;
+}
+
+/* Formulario */
+.editar-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Cada campo del formulario */
+.editar-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.editar-field label {
+    color: #674b4c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.editar-field input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #e7c9c7;
+    border-radius: 10px;
+    background: white;
+    color: #674b4c;
+    font-size: 14px;
+    outline: none;
+}
+
+.editar-field input:focus {
+    border-color: #eb777d;
+    box-shadow: 0 0 0 3px rgba(235, 119, 125, 0.15);
+}
+
+/* Mensaje de error */
+.editar-message {
+    padding: 13px;
+    margin-bottom: 20px;
+    background: #fff0ed;
+    border: 1px solid #efc3c5;
+    border-radius: 10px;
+    color: #9f396c;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Botón para guardar */
+.editar-button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: #eb777d;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.editar-button:hover {
+    background: #d85f70;
+    transform: translateY(-2px);
+}
+
+/* Enlace para volver */
+.editar-back {
+    display: block;
+    margin-top: 22px;
+    color: #9f396c;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.editar-back:hover {
+    text-decoration: underline;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+
+    .editar-container {
+        padding: 25px 15px;
+    }
+
+    .editar-card {
+        padding: 28px 20px;
+    }
+
+    .editar-heading h1 {
+        font-size: 25px;
+    }
+
+}
+
+
+
+/* =========================================
+   PÁGINA DE USUARIOS ARCHIVADOS
+   ========================================= */
+
+/* Fondo tropical de la página */
+.archivados-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:
+        linear-gradient(rgba(45, 27, 35, 0.35), rgba(45, 27, 35, 0.35)),
+        url("https://images.unsplash.com/photo-1567991722999-74f27f53f33a?w=1600") center/cover fixed;
+}
+
+/* Contenedor principal */
+.archivados-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 45px 25px;
+}
+
+/* Tarjeta principal */
+.archivados-card {
+    width: 100%;
+    padding: 35px;
+    background: rgba(255, 248, 245, 0.97);
+    border-radius: 22px;
+    box-shadow: 0 15px 45px rgba(40, 20, 25, 0.22);
+}
+
+/* Encabezado */
+.archivados-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.archivados-tag {
+    color: #b85d83;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.archivados-heading h1 {
+    color: #674b4c;
+    font-size: 32px;
+    margin: 14px 0 10px;
+}
+
+.archivados-heading p {
+    color: #967777;
+    font-size: 15px;
+}
+
+/* Contenedor adaptable de la tabla */
+.archivados-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 12px;
+}
+
+/* Tabla de usuarios archivados */
+.archivados-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    color: #674b4c;
+    font-size: 13px;
+}
+
+.archivados-table th {
+    padding: 16px 12px;
+    background: #b85d83;
+    color: white;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.archivados-table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #f1dddd;
+}
+
+.archivados-table tbody tr:nth-child(even) {
+    background: #fff8f5;
+}
+
+.archivados-table tbody tr:hover {
+    background: #fff0ed;
+}
+
+/* Formulario de reactivación */
+.archivados-table form {
+    margin: 0;
+}
+
+/* Botón para reactivar usuarios */
+.archivados-reactivate {
+    padding: 9px 15px;
+    border: none;
+    border-radius: 22px;
+    background: #eb777d;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.archivados-reactivate:hover {
+    background: #d85f70;
+    transform: translateY(-2px);
+}
+
+/* Mensaje cuando no hay cuentas archivadas */
+.archivados-empty {
+    padding: 30px !important;
+    text-align: center;
+    color: #967777;
+}
+
+/* Cantidad de usuarios */
+.archivados-results {
+    margin-top: 18px;
+    color: #967777;
+    font-size: 13px;
+}
+
+/* Enlace para volver al panel */
+.archivados-actions {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.archivados-back {
+    color: #9f396c;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.archivados-back:hover {
+    text-decoration: underline;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 700px) {
+
+    .archivados-container {
+        padding: 25px 12px;
+    }
+
+    .archivados-card {
+        padding: 22px 15px;
+    }
+
+    .archivados-heading h1 {
+        font-size: 25px;
+    }
+
+}
+
+
+
+/* ========================================
+   PÁGINA DE INFORMACIÓN DE DESTINOS
+======================================== */
+
+/* Fondo general de la página */
+.info-destino-page {
+    background-color: #fff8f5;
+    color: #674b4c;
+}
+
+/* Imagen principal del destino */
+.info-portada {
+    min-height: 430px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 50px 20px;
+}
+
+/* Capa oscura suave para mejorar la lectura */
+.info-portada::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(45, 25, 35, 0.35);
+}
+
+/* Contenido que aparece sobre la imagen */
+.info-portada-contenido {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 750px;
+}
+
+/* País o continente */
+.info-portada-contenido p {
+    color: #f5b6bd;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+/* Nombre del destino */
+.info-portada-contenido h2 {
+    font-size: 58px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+/* Frase debajo del título */
+.info-portada-contenido span {
+    font-size: 18px;
+}
+
+/* Contenedor de la información */
+.info-contenedor {
+    max-width: 1050px;
+    margin: 60px auto;
+    padding: 0 25px;
+}
+
+/* Tarjeta principal */
+.info-card {
+    background: white;
+    padding: 45px;
+    border-radius: 22px;
+    box-shadow: 0 8px 30px rgba(103, 75, 76, 0.09);
+}
+
+/* Etiqueta superior */
+.info-etiqueta {
+    color: #eb777d;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* Título de la información */
+.info-card h2 {
+    color: #674b4c;
+    font-size: 30px;
+    margin: 12px 0 20px;
+}
+
+/* Descripción */
+.info-descripcion {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #806b69;
+}
+
+/* Sección con los detalles */
+.info-detalles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+/* Cada detalle */
+.info-detalles article {
+    background: #fff3f1;
+    padding: 22px;
+    border-radius: 15px;
+}
+
+/* Títulos de los detalles */
+.info-detalles h3 {
+    color: #bd647f;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+/* Texto de los detalles */
+.info-detalles article p {
+    color: #806b69;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Botón para volver */
+.info-volver {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 13px 25px;
+    background: #eb777d;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Efecto al pasar el cursor */
+.info-volver:hover {
+    background: #bd647f;
+    transform: translateY(-2px);
+}
+
+/* Adaptación para celulares */
+@media (max-width: 700px) {
+
+    .info-portada {
+        min-height: 330px;
+    }
+
+    .info-portada-contenido h2 {
+        font-size: 40px;
+    }
+
+    .info-card {
+        padding: 25px;
+    }
+
+    .info-card h2 {
+        font-size: 25px;
+    }
+
+    .info-detalles {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ==========================================
+   TRAVELORA - DISEÑO PREMIUM DE DESTINOS
+========================================== */
+
+/* Fondo general */
+.info-destino-page {
+    background: #fff8f5;
+    color: #674b4c;
+}
+
+/* Portada principal */
+.info-destino-page .info-portada {
+    min-height: 520px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 25px;
+}
+
+/* Oscurecemos suavemente la fotografía */
+.info-destino-page .info-portada::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(42, 25, 35, 0.50),
+        rgba(42, 25, 35, 0.12),
+        rgba(42, 25, 35, 0.40)
+    );
+}
+
+/* Texto de la portada */
+.info-destino-page .info-portada-contenido {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 850px;
+    animation: aparecer-destino 0.8s ease;
+}
+
+.info-destino-page .info-portada-contenido p {
+    color: #f5b6bd;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.info-destino-page .info-portada-contenido h2 {
+    font-family: Georgia, serif;
+    font-size: clamp(55px, 8vw, 88px);
+    font-weight: normal;
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+
+.info-destino-page .info-portada-contenido span {
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+
+/* Animación de entrada */
+@keyframes aparecer-destino {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contenedor general */
+.info-destino-page .info-contenedor {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 80px 30px;
+}
+
+/* Presentación del destino */
+.info-presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 75px;
+}
+
+.info-presentacion > div:first-child {
+    max-width: 750px;
+}
+
+/* Etiquetas pequeñas */
+.info-destino-page .info-etiqueta {
+    color: #c46d8b;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+/* Títulos de las secciones */
+.info-presentacion h2,
+.info-titulo-seccion h2 {
+    font-family: Georgia, serif;
+    font-size: 37px;
+    font-weight: normal;
+    color: #674b4c;
+    margin-bottom: 20px;
+}
+
+/* Descripción */
+.info-destino-page .info-descripcion {
+    color: #806b69;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* Sello decorativo */
+.info-sello {
+    min-width: 180px;
+    width: 180px;
+    height: 180px;
+    border: 1px solid #db97b9;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: rotate(8deg);
+    color: #bd647f;
+}
+
+.info-sello span {
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.info-sello strong {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+/* Espaciado de las secciones */
+.info-datos,
+.info-galeria-seccion,
+.info-experiencias {
+    margin-top: 45px;
+    margin-bottom: 85px;
+}
+
+/* Títulos de sección */
+.info-titulo-seccion {
+    margin-bottom: 30px;
+}
+
+/* Cuadrícula de datos útiles */
+.info-datos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+/* Tarjetas de datos */
+.info-datos-grid article {
+    background: white;
+    padding: 28px 20px;
+    border-radius: 16px;
+    border: 1px solid #f3e3df;
+    box-shadow: 0 8px 25px rgba(103, 75, 76, 0.05);
+    transition: 0.3s;
+}
+
+.info-datos-grid article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(103, 75, 76, 0.10);
+}
+
+.info-datos-grid article span {
+    font-size: 27px;
+}
+
+.info-datos-grid h3 {
+    color: #bd647f;
+    font-size: 16px;
+    margin: 15px 0 8px;
+}
+
+.info-datos-grid article p {
+    color: #806b69;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Galería de imágenes */
+.info-galeria {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 18px;
+    height: 310px;
+}
+
+.info-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.info-galeria img:hover {
+    transform: scale(1.025);
+    filter: brightness(1.05);
+}
+
+/* Tarjetas de experiencias */
+.info-experiencias-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.info-experiencia-card {
+    background: white;
+    border-radius: 18px;
+    padding: 30px 25px;
+    border-bottom: 4px solid #e9a4b9;
+    box-shadow: 0 8px 25px rgba(103, 75, 76, 0.06);
+    transition: 0.3s;
+}
+
+.info-experiencia-card:hover {
+    transform: translateY(-7px);
+    border-bottom-color: #eb777d;
+}
+
+.info-experiencia-card span {
+    color: #eb777d;
+    font-size: 25px;
+}
+
+.info-experiencia-card h3 {
+    color: #674b4c;
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: normal;
+    margin: 18px 0 12px;
+}
+
+.info-experiencia-card p {
+    color: #806b69;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Sección final destacada */
+.info-final {
+    background: linear-gradient(135deg, #bd647f, #eb777d);
+    border-radius: 22px;
+    padding: 65px 30px;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+.info-final p {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #ffe1e5;
+}
+
+.info-final h2 {
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: normal;
+    margin: 20px 0 30px;
+}
+
+.info-final a {
+    display: inline-block;
+    padding: 14px 30px;
+    background: white;
+    color: #bd647f;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.info-final a:hover {
+    background: #fff0f0;
+    transform: translateY(-3px);
+}
+
+/* Adaptación para tablets */
+@media (max-width: 850px) {
+    .info-datos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-galeria {
+        height: 250px;
+    }
+
+    .info-presentacion {
+        flex-wrap: wrap;
+    }
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    .info-destino-page .info-portada {
+        min-height: 380px;
+    }
+
+    .info-destino-page .info-contenedor {
+        padding: 55px 18px;
+    }
+
+    .info-presentacion h2,
+    .info-titulo-seccion h2 {
+        font-size: 29px;
+    }
+
+    .info-sello {
+        width: 140px;
+        min-width: 140px;
+        height: 140px;
+    }
+
+    .info-datos-grid,
+    .info-experiencias-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-galeria {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .info-galeria img {
+        height: 230px;
+    }
+
+    .info-final {
+        padding: 45px 20px;
+    }
+
+    .info-final h2 {
+        font-size: 27px;
+    }
+}
+ 
+
+/* ==========================================
+   CORRECCIÓN DE SUPERPOSICIÓN DE IMÁGENES
+========================================== */
+
+/* Las imágenes comunes respetan el espacio disponible */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Las tarjetas mantienen sus imágenes dentro */
+.tarjeta,
+.destino {
+    position: relative;
+    isolation: isolate;
+}
+
+.tarjeta img {
+    position: static;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destino img {
+    position: static;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+/* La portada mantiene la capa oscura dentro de la fotografía */
+.info-destino-page .info-portada {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.info-destino-page .info-portada::before {
+    z-index: 0;
+    pointer-events: none;
+}
+
+.info-destino-page .info-portada-contenido {
+    position: relative;
+    z-index: 1;
+}
+
+/* La galería no invade las secciones siguientes */
+.info-galeria {
+    position: relative;
+    display: grid;
+    overflow: hidden;
+    align-items: stretch;
+}
+
+.info-galeria img {
+    position: static;
+    display: block;
+    min-width: 0;
+    min-height: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Evitamos que los elementos se salgan de sus tarjetas */
+.info-datos-grid article,
+.info-experiencia-card {
+    min-width: 0;
+    overflow: hidden;
+}
+
+/* Evitamos desbordamientos horizontales */
+body {
+    overflow-x: hidden;
+}
